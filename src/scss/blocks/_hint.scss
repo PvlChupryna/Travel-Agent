@@ -1,0 +1,78 @@
+.hint {
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+   
+    border-radius: 12px;
+    padding: 12px;
+    width: 324px;
+    height: 79px;
+    align-items: center;
+
+    box-shadow: 0 4px 34px 0 rgba(50, 75, 104, 0.17);
+
+}
+.hint__img-wrapper {
+    
+    border-radius: 8px;
+    width: 58px;
+    height: 55px;
+    overflow: hidden;
+}
+.hint__description {
+    flex-grow: 1;
+    margin-left: 16px;
+    
+}
+.hint__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.hint__raiting {
+    font-size: 18px;
+    font-weight: 400;
+
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url(../../img/icons/star-small.svg);
+        height: 17px;
+        width: 16px;
+        
+        position: absolute;
+        left: -30%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+}
+.hint__price {
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 150%;
+}
+.muted {
+    font-weight: 400;
+    color: var(--color-muted);
+}
+.accent {
+    font-weight: 500;
+    color: var(--accent);
+}
+.hint__img {
+    width: 100%;
+    height: 100%;
+}
+.person-hint__img {
+    width: 100%;
+    height: 100%;
+
+}
+

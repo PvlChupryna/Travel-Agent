@@ -1,0 +1,77 @@
+.travel-card {
+    //position: absolute;
+    left: 7%;
+    top: 13%;
+    background-color: #fff;
+    //display: flex;
+    border-radius: 12px;
+    //padding: 12px;
+    max-width: 304px;
+    //height: 79px;
+    align-items: center;
+
+    box-shadow: 0 4px 34px 0 rgba(50, 75, 104, 0.17);
+
+}
+.travel-card__img {
+    width: 100%;
+    
+    // max-width: 304px;
+    // max-height: 304px;
+}
+.travel-card__img-wrapper {
+    
+    border-radius: 12px;
+    max-width: 304px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.travel-card__description {
+    flex-grow: 1;
+    
+    
+}
+.travel-card__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.travel-card__raiting {
+    font-size: 18px;
+    font-weight: 400;
+
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url(../../img/icons/star-small.svg);
+        height: 17px;
+        width: 16px;
+        
+        position: absolute;
+        left: -30%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+}
+.travel-card__price {
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 150%;
+}
+.muted {
+    font-weight: 400;
+    color: var(--color-muted);
+}
+.accent {
+    font-weight: 500;
+    color: var(--accent);
+}
+

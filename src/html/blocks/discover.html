@@ -1,0 +1,42 @@
+<section id="Home" class="discover section">
+    <div class="container">
+		<div class="discover__grid">
+            <div class="discover__content">
+                <div class="discover__content-text">
+                    <h1 class="discover__title">
+                        Discover your <br> favorite place <br> with us
+                    </h1>
+                    <p class="discover__description">
+                        Your journey begins here with our curated travel experiences. 
+                        Discover new horizons, create lasting memories, and explore 
+                        the world with our expertly crafted itineraries.
+                    </p>
+                </div>
+                <form class="discover__form">
+                    <label class="discover__label discover__label-map" >
+                        <p>Locations</p>
+                        <input class="map-input" id="autoCompleteDiscover"  type="text" placeholder="e.g Bali, Indonesia" >
+                        
+                    </label>
+                    <div class="divider"></div>
+                    <label  class="discover__label discover__label-date">
+                        <p>Date and time</p>
+                        <input class="date-input" id="datepicker"  type="text" placeholder="MM/DD/YYYY" >
+                    </label>
+                    <button type="button" class="form-btn"></button>
+                </form>
+            </div>
+            <div class="discover__banner">
+                @@include('elements/discover-hint.html')
+                <picture>
+                    <source srcset="./img/discover/hero-img.webp 1x, ./img/discover/hero-img@2x.webp 2x" type="image/webp">
+                    <source srcset="./img/discover/hero-img.png 1x, ./img/discover/hero-img@2x.png 2x" type="image/png">
+
+                    <img class="banner-img" src="../../img/discover/hero-img.png" alt="banner">
+                </picture>
+                @@include('elements/scroll-down.html')
+            </div>
+
+        </div>	
+    </div>
+</section>

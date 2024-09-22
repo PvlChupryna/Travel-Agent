@@ -1,0 +1,95 @@
+//для липкой шапки
+.header {
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	transition: top 0.6s ease-in-out;
+	width: 100%;
+	z-index: 100;
+}
+.header__content {
+	transition: padding 0.4s ease-in-out;
+}
+.header__fixed {
+    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+	// & .header__row {
+	// 	padding-top: 0;
+	// }
+}
+//* присваевает JS для скывтия при прокрутке *//
+.hidden-header {
+	top: -75px;
+}
+
+.header__logo {
+    flex-shrink: 0;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+.nav__list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    & a {
+        transition: color 0.2s ease-in;
+        @media (hover: hover) {
+            &:hover {
+                color: var(--accent);  
+            }
+        }
+    } 
+    // & a:hover {
+    //     color: var(--accent);
+    // }
+    @media (max-width: 800px) {
+        display: none;
+    }
+    
+}
+
+.nav__btns {
+   
+    display: flex;
+    gap: 12px;
+
+    @media (max-width: 800px) {
+        display: none;
+    }
+}
+.nav__btn {
+    border-radius: 8px;
+    padding: 8px 20px;
+    height: 40px;
+    border: solid 1px #181818;
+    
+    transition: color 0.2s ease-in, border-color 0.2s ease-in, background-color 0.2s ease-in;
+    &:hover {
+        background-color: var(--accent);
+        border-color: var(--accent); 
+    }
+}
+.btn-login {
+    border-color: var(--color-muted);
+    height: 40px;
+    &:hover {
+        color: white;
+    }
+}
+.btn-sign {
+    color: white;
+    background-color: #181818;
+}
+.nav__elem.is-current {
+    color: var(--accent)
+}

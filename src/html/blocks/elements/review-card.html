@@ -1,0 +1,29 @@
+<div class="review-card">
+    <div class="review-card__rating">
+    
+        @@for (var i = 0; i < context.stars; i++) {
+            <img src="../../../img/icons/star.svg" alt="star">
+        }
+        
+        @@if (context.stars < 5) {
+            @@for (var i = 0; i < 5 - context.stars; i++) {
+                <img src="../../../img/icons/star-off.svg" alt="star">
+            }
+        }
+    </div>
+    <div class="review-card__text">
+        <p>
+            "@@text" 
+        </p>
+    </div>
+    <div class="review-card__person-wrapper">
+        <div class="review-card__avatar">
+            <img class="review-card__avatar-img" src="../../../img/testimonials/@@img.jpg" alt="">
+        </div>
+        <div class="review-card__person-description">
+            <p class="review-card__name">@@name</p>
+            <p class="review-card__role">@@role</p>
+        </div>
+    </div>
+
+</div>

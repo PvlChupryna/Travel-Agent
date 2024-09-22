@@ -1,0 +1,23 @@
+[
+    {
+        "stars": "5",
+        "text": "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!",
+        "name": "Akbar Cenglu",
+        "role": "Travel Enthusiast",
+        "img": "04"
+    },
+    {
+        "stars": "4",
+        "text": "The travel website's customer service is top-notch! They were quick to respond to my queries and helped me plan a dream vacation. It was an excellent experience from start to finish.",
+        "name": "Nichole Edward",
+        "role": "Travel Enthusiast",
+        "img": "05"
+    },
+    {
+        "stars": "4",
+        "text": "Hands down the best travel website I've ever used! The user interface was so intuitive, and I was able to book my dream vacation effortlessly. erat.",
+        "name": "Name Surname",
+        "role": "Travel Enthusiast",
+        "img": "06"
+    }
+]

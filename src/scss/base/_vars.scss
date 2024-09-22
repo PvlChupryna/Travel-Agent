@@ -1,0 +1,24 @@
+:root {
+	--container-width: 1200px;
+	--container-padding: 15px;
+
+	--font-main: 'CircularStd';
+	--font-accent: 'CircularStd', sans-serif;
+	--font-titles: 'CircularStd';
+
+	--page-bg: #fff;
+	--text-color: #181818;
+	--accent: #35AFF4;
+	--link-color: #181818;
+	--color-muted: #B7B7B7;
+
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}
